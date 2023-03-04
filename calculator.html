@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<style>
+			.container{
+				margin: 8% 12% 12% 12%;
+				border: 1px solid;
+			}
+			input{
+				margin-left:8px;
+				width:23%;
+				height:99px;
+				border-radius:48%;
+				border-color:red;
+			}
+			input:hover{
+				animation-name: animation;
+				animation-duration: 4s;
+				animation-iteration-count: infinite;
+			}
+			@keyframes animation{
+				from {background-color: #E4E9BE;}
+				to {background-color: #9FB4FF;}
+			}
+			#cal{
+				all: unset;
+				border:2px solid #82A284;
+				width:99.5%;
+				pointer-events:none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form name="form1">
+				<input type="text" id ="cal" name="output"><br><br>
+				<input type="button" value="clear" onclick="form1.output.value = ' ' ">
+				<input type="button" value="%" onclick="form1.output.value += '%' ">
+				<input type="button" value="⌫" onclick="form1.output.value = (form1.output.value).slice(0,-1);">
+				<input type="button" value="/" onclick="form1.output.value += '/' "><br>
+				<input type="button" value="7" onclick="form1.output.value += '7' ">
+				<input type="button" value="8" onclick="form1.output.value += '8' ">
+				<input type="button" value="9" onclick="form1.output.value += '9' ">
+				<input type="button" value="x" onclick="form1.output.value += '*' "><br>
+				<input type="button" value="4" onclick="form1.output.value += '4' ">
+				<input type="button" value="5" onclick="form1.output.value += '5' ">
+				<input type="button" value="6" onclick="form1.output.value += '6' ">
+				<input type="button" value="-" onclick="form1.output.value += '-' "><br>
+				<input type="button" value="1" onclick="form1.output.value += '1' ">
+				<input type="button" value="2" onclick="form1.output.value += '2' ">
+				<input type="button" value="3" onclick="form1.output.value += '3' ">
+				<input type="button" value="+" onclick="form1.output.value += '+' "><br>
+				<input type="button" value="00" onclick="form1.output.value += '00' ">
+				<input type="button" value="0" onclick="form1.output.value += '0' ">
+				<input type="button" value="." onclick="form1.output.value += '.' ">
+				<input type="button" value="=" onclick=" form1.output.value = eval(form1.output.value)"><br>
+			</form>
+		</div>
+	</body>
+</html>

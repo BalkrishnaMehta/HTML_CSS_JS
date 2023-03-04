@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<HTML>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+			<legend><h1>Student Information</h1></legend>
+
+				<label for =fname>First name:</label>         
+				<input type="text" placeholder="Enter Your first name" name=fname /><br><br>
+	
+				<label for=lname>Last name:</label>
+				<input type="text" placeholder="Enter Your last name" name=lname /><br><br>
+
+				<label for="mail">Email ID:</label>
+				<input type="email" placeholder="Enter email ID" name="mail" size="40" ><br><br>
+
+				<label for="birthdate">D.O.B:</label>
+				<input type="date" name="birthdate"><br><br>
+
+				<label for="gender">Gender:</label>
+				<input type="radio"name=gender value="male"><label>Male</label><br>&emsp;&ensp;&emsp;&emsp;&ensp;
+				<input type="radio"name=gender value="female"><label>Female</label><br><br>
+
+				<label for="address" style="padding-top:20px">Address:</label>
+				<textarea name="address" rows="5" cols="50"></textarea><br><br>
+			
+				<label for="hobby">Hobby:</label>
+				<select name="hobby">
+					<option value="cricket">Cricket</option>
+					<option value="reading">Reading</option>
+					<option value="Acting">Acting</option>
+					<option value="dancing">Dancing</option>
+					<option value="singing">Singing</option>
+				</select><br><br>
+
+				<label for=department>Department:</label>
+				<input type="checkbox" name="department" value="cse">
+				<label>CSE</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+				<input type="checkbox" name="department" value="cc">
+				<label>CC</label><br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+				<input type="checkbox" name="department" value="se"><label>SE</label><br><br>
+
+				<input type="submit" value="submit">
+				<input type="reset" value="Reset">
+			</fieldset>
+		</form>
+	</body>
+</HTML>

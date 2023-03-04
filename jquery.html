@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+	<head>
+		<title>JQUERY</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("#all").click(function(){
+					$("*").hide();
+				});
+				$("#button1").click(function(){
+					$(this).hide();
+				});
+				$("pre").click(function(){
+					$(this).hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h1>JQUERY</h1>
+		<p>Jquery is library of javascript library</p>
+		<button id="all">Click to hide all elements</button>
+		<button id="button1">delete button</button>
+		<pre>Delete ME</pre>
+	</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+	<head>
+		<title></title>
+		<style>
+			.myclass{
+				color:red;
+				font-size:10px;
+			}
+		</style>
+		<script>
+			function fun()
+				{
+					//window.alert("error");
+					//document.getElementById("p1").innerHTML="clicked";
+					/*var ele = document.getElementsByTagName("button")[0];
+					ele.innerHTML="change by tagname";*/
+					//document.getElementsByTagName("button")[0].innerHTML="Change by tagname";
+					
+					/*const ele = document.getElementsByTagName("button");
+					for (let i = 0; i < ele.length; i++) {
+					ele[i].innerHTML="Change by tagname";
+					}*/
+					
+					/*var element = document.getElementsByClassName("myclass");
+					for (let i = 0; i < element.length; i++) {
+						element[i].innerHTML="Hello World";
+						element[i].style.color = "blue";
+						element[i].style.fontSize = "30px";
+					}*/
+					
+					/*var dhruv = document.querySelectorAll("*");
+					dhruv[0].innerHTML="Change by tagname";*/
+					
+					const element = document.getElementById("a1"); 
+					let text = element.getAttribute("href"); 
+					document.getElementById("class2").innerHTML = text;
+				}
+			/*function d() {
+				var dhruv = document.querySelectorAll("h1.myclass");
+				document.write(dhruv.toString());
+			}*/
+			//document.addEventListener("mouseout",fun);
+		</script>
+	</head>
+	<body>
+		<button style="margin:120px;" onmouseover="fun()">click me</button> 
+		<button id="p1" onclick="fun()">click me</button>
+		
+		<p class="myclass" onclick="fun()">hello</p>
+		<h1 class="myclass" onclick="fun()">how</h1>
+		<p class="myclass" onclick="fun()">are</p>
+		<h1 class="myclass" onclick="fun()">you</h1>  
+		
+		<p class="class2" >hello</p><br>
+		<a id="a1" href="https://www,google.com">Google</a><br>
+		<a id="a2" >Google</a>
+	</body>
+</html>

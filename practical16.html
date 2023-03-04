@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Js Form Validate</title>
+		<style></style>
+		<script>
+			function formvalidate(){
+				var exp_name = '[A-z]'
+				var exp_enroll = '[0-9]{15}'
+				var exp_phoneno = '[0-9]{10}'
+				var name = document.form1.name1.value;
+				var enrollno = document.form1.enroll.value;
+				var phoneno = document.form1.phoneno.value;
+				var email = document.form1.mail.value;
+				var institute = document.form1.institute.value;
+
+				if(!name.match(exp_name)){
+					alert("Enter Correct Name");
+				}
+				if(!enrollno.match(exp_enroll)){
+					alert("Enter Correct Enrollment no");
+				}
+				if(!phoneno.match(exp_phoneno)){
+					alert("Enter Correct Phone no");
+				}
+				if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(form1.mail.value)){
+					return (true)
+				}
+				else{
+					alert("You have entered an invalid email address!")
+				}
+				if(institute == declaration){
+					alert("Select another option")
+				}
+ 
+			}
+		</script>
+	</head>
+	<body>
+		<form name="form1">
+			<fieldset>
+			<legend><h1>Library Book Issue Form</h1></legend>
+
+				<label for = name1 >Name: &emsp;&emsp;&emsp;&emsp;&emsp;</label>         
+				<input type="text" placeholder="Your first name" name=name1 ><br><br>
+	
+				<label for =enroll>Enrollment No: &ensp;</label>         
+				<input type="text" placeholder="Your Enrollment Number" name=enroll ><br><br>
+
+				<label for="mail">Phone No: &emsp;&emsp;&emsp;</label>
+				<input type="text" placeholder="Phone Number" name="phoneno" ><br><br>
+
+				<label for="mail">Email ID: &emsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+				<input type="text" placeholder="Email ID" name="mail" ><br><br>
+
+				<label for="institue">Institute: &emsp;&emsp;&emsp;&nbsp;&nbsp;</label>
+				<select name="institute">
+					<option selected disabled label="Select your institue">
+					<option value="amtics">Amtics</option>
+					<option value="cgpit">Cgpit</option>
+					<option value="pharmasy">Pharmasy</option>
+					<option value="bmit">Bmit</option>
+					<option value="cgbhakta">Cgbhakta</option>
+					</optgroup>
+				</select><br><br>
+
+				<label for="idate">Issue Date: &emsp;&emsp;&nbsp;&nbsp;</label>
+				<input type="date" name="idate"><br><br>
+
+				<label for="date">Return Date: &emsp;&emsp;</label>
+				<input type="date" name="rdate"><br><br>
+			
+				<input type="submit" value="submit" onclick="return formvalidate()">
+				<input type="reset" value="Reset">
+			</fieldset>
+		</form>
+	</body>
+</html>

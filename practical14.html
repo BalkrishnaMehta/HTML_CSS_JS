@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Date and Time</title>
+		<style>
+			body{
+				text-align:center;
+				background-color:yellow;
+			}
+			button{
+				margin:2%;
+				padding:20px;
+			}
+			button:hover{
+				background-color:blue;
+			}
+		</style>
+		<script>
+			function fun1(){
+				document.getElementById("p1").innerHTML=Date();
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="fun1()">click me</button><br>
+		<p id="p1"></p>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<script>
+				function fun(){
+					/*element = document.getElementById("a1"); 
+					text = element.getAttribute("href"); 
+					document.getElementById("class2").innerHTML = text;*/
+					
+					/*var a= document.getElementById("a2");
+					a.setAttribute("href","https://www.google.com");
+					a.setAttribute("style","font-size:30px; color:red;")*/
+ 					var a= document.getElementById("a2");
+ 					a.style.fontSize="30px";
+ 					a.style.color="red";
+					
+				}
+		</script>
+	</head>
+	<body>
+		<a  id ="a1" href="https://www.google.com" onclick="fun()">Google</a>
+		<p id="class2">hello<p>
+		<button onclick="fun()">click</button><br><br>
+		
+		<a id="a2" onmouseover="fun()">Google</a>
+	<body>
+</html>

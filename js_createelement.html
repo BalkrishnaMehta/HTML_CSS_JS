@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Create element</title>
+		<script>
+			/*function fun(){
+				h=document.createElement("br");
+				document.body.appendChild(h);
+
+				t=document.createTextNode("Google");
+				document.body.appendChild(t);
+			}*/
+			function fun(){	
+				h=document.createElement("h1");
+				h.innerText="HelloWorld";
+				document.body.appendChild(h);
+				
+				i=document.createElement("img");
+				i.setAttribute("src","index.jpeg");
+				document.body.appendChild(i);
+			
+				a1=document.createElement("a");
+				t=document.createTextNode("Open image in new tab");
+				a1.setAttribute("href","file:///home/202103103510434/Documents/wd/index.jpeg");
+				a1.appendChild(t);
+				document.body.appendChild(a1);
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="fun()">click</button>
+		<a href="https://www.google.com/"><img src="index.jpeg"></a>
+	</body>
+</html>

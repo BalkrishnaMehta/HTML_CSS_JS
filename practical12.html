@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+	<head>
+		<title>PopUp Boxes</title>
+		<style>
+			body{
+				height:100%;
+				width:100%;
+				text-align:center;
+			}
+			div{
+				margin-left:30%;
+				width:40%;
+				border:solid;
+				height:40%;
+				width:50;
+				background-image  :linear-gradient(135deg,#40DFEF,#A85CF9);
+			}
+			button{
+				margin:3%;
+				height:70px;
+				width:100px;
+			}
+		</style>
+		<script>
+			function function1() {
+				alert("Alert Box!!!");
+			}
+			function function2() {
+				var txt;
+				if(confirm("Confirm Box!!!")==true){
+					txt="ok";
+				}
+				else{
+					txt="cancel";
+				}
+				document.getElementById("p1").innerHTML = txt;
+			}
+			function function3(){
+				var var2 = prompt("Please Enter Your Name: ","");
+				if(var2 == null || var2 == ""){
+					txt="user cancelled the prompt";
+				}
+				else{
+					txt="Hello "+ var2;
+				}
+				document.getElementById("p1").innerHTML = txt;
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<h1>PopUp Boxes</h1>
+			<button onclick="function1()">Alert</button><br>
+			<button onclick="function2()">Confirm</button><br>
+			<button onclick="function3()">Prompt</button><br>
+			<p id="p1"></p>
+		</div>
+	</body>
+</html>

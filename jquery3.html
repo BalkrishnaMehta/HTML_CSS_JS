@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Date</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
+    </head>
+    <body>
+            <h1>Click on button to know current date</h1>
+            <input type="button" id="btn" value="GET DATE (DD/MM/YYYY)"/>
+            <h1 id="printDate"></h1>
+            <script>
+                $(document).ready(function(){
+                   $("#btn").click(function(){
+                       var date = new Date();
+                       console.log(date);
+                       var val= date.getDate()+"/" +(date.getMonth()+1) +"/"+date.getFullYear();
+                       $("#printDate").text(val);
+                   });
+               });
+           </script>
+    </body>
+</html

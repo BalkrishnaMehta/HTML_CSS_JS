@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+	<head>
+		<title></title>
+		<script>
+			function fun(){
+				/*const list = document.getElementByTagName("list1");
+				list.removeChild(list.children[0]);*/
+			
+				l=document.getElementById("list2")
+				/*n=document.getElementById("list2").children[0];
+				t=document.createTextNode("car5");
+				l.replaceChild(t,n)*/
+
+				t=document.createTextNode("car5");
+				l.insertBefore(t,l.children[0]);
+				
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="fun()">click</button>
+		<ol id="list1">
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JS</li>
+		</ol>
+		<ul id="list2">
+			<li>car1</li>
+			<li>car2</li>
+			<li>car3</li>
+			<li>car4</li>
+		</ul>
+	</body>
+</html>

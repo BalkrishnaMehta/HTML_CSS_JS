@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+            <title>Jquery get textbox valueexample</title>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+            <script>
+                $(document).ready(function(){
+                    $("#setbtn").click(function(){
+                        $("input:text").val("XYZ");
+                    });
+                });
+            </script>
+            <script>
+                $(document).ready(function(){
+                    $("#getbtn").click(function(){
+                        $("#msg").html($("#msg").text() + " " + $("input:text").val());
+                    });
+                });
+            </script>
+    </head>
+    <body>
+            <h1>Jquery get textbox value example</h1>
+            <h2 id="msg">Hello</h2>
+            Text box: <input type="text"><br><br>
+            <button id="setbtn">Set</button><br><br>
+            <button id="getbtn">Get</button><br><br>
+    </body>
+</html>
+    
